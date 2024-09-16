@@ -1,8 +1,7 @@
-import { Loader } from 'https://cdn.pika.dev/google-maps';
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+  const mapHTML = document.getElementById('map');
+  L.map(mapHTML).setView([51.505, -0.09], 13);
 
-
-const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
@@ -23,12 +22,3 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
-
-    const options = {/* todo */};
-    const loader = new Loader('my-api-key', options);
- 
-    const google = await loader.load();
-    const map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8,
-    });
