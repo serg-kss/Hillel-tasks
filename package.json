@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel"
   },
   "author": "KS",
   "license": "ISC",
@@ -15,6 +16,10 @@
     "swiper": "^11.1.12"
   },
   "devDependencies": {
-    "@types/leaflet": "^1.9.12"
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@types/leaflet": "^1.9.12",
+    "lite-server": "^2.6.1"
   }
 }
